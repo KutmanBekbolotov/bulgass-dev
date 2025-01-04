@@ -1,0 +1,75 @@
+.logo img{
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85); /* Прозрачность фона */
+    color: white;
+    display: flex;
+    flex-direction: column; /* Элементы выстраиваются вертикально */
+    justify-content: flex-start; /* Начало сверху */
+    align-items: center; /* Центрирование элементов по горизонтали */
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 2rem 1rem; /* Отступы для мобильных устройств */
+  }
+  
+  .modal-text {
+    width: 100%;
+    max-width: 800px; /* Ограничиваем ширину текста */
+  }
+  
+  .modal-text h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #28e3fc;
+  }
+  
+  .service-category {
+    margin-bottom: 2rem; /* Отступы между категориями */
+  }
+  
+  .service-category h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #005499;
+    margin-bottom: 0.5rem;
+    text-align: left; /* Выровнять заголовки влево */
+  }
+  
+  .service-category ul {
+    list-style-type: disc;
+    padding-left: 1.5rem; /* Отступы для маркеров */
+  }
+  
+  .service-category ul li {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.125rem;
+    line-height: 1.5rem; /* Увеличенный интерлиньяж для читаемости */
+  }
+  
+  /* Кнопка закрытия */
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: #ff4c4c;
+  }
+  
