@@ -2,28 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Глобальные стили */
-
-/* Убираем отступы по умолчанию у всех элементов */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Устанавливаем шрифт по умолчанию */
 body {
-  font-family: 'Roboto', sans-serif; /* Можно выбрать свой шрифт */
-  background-color: #f9f9f9; /* Цвет фона по умолчанию */
-  color: #333; /* Цвет текста по умолчанию */
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9; 
+  color: #333; 
 }
 
-/* Пример кастомных стилей */
 h1, h2, h3 {
   font-weight: 700;
 }
 
-/* Глобальный стиль для ссылок */
 a {
   text-decoration: none;
   color: inherit;
@@ -31,10 +25,9 @@ a {
 }
 
 a:hover {
-  color: #1d4ed8; /* Синий при наведении */
+  color: #1d4ed8;
 }
 
-/* Пример кастомной кнопки */
 .btn {
   @apply py-2 px-4 bg-blue-500 text-white font-bold rounded-lg shadow-lg transition duration-300;
 }
@@ -43,13 +36,11 @@ a:hover {
   @apply bg-blue-400;
 }
 
-/* Стиль для изображения, чтобы оно не выходило за границы */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Пример кастомного контейнера */
 .container {
   width: 100%;
   max-width: 1200px;

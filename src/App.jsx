@@ -5,6 +5,7 @@ import MainSection from './components/MainSection';
 import Footer from './components/Footer';
 import AboutUs from './pages/About';
 import Blog from './pages/Blog';
+import DevelopmentPage from './pages/Development';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/" element={<MainSection />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/development" element={<DevelopmentPage />} />
         </Routes>
       </main>
       <Footer />

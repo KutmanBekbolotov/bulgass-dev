@@ -108,12 +108,12 @@ const teamMembers = [
   {
     name: "Nazik Alymseitova",
     roles: {
-      en: "Lead Developer",
-      ru: "Ведущий разработчик",
+      en: "Сontent maker & SMM",
+      ru: "Контентмейкер и SMM",
     },
     descriptions: {
-      en: "A strategic Lead Developer with a strong background in full-stack development, capable of driving technical innovation and overseeing the development lifecycle.",
-      ru: "Стратегический ведущий разработчик с сильным опытом в full-stack разработке, способный внедрять технические инновации и управлять жизненным циклом разработки.",
+      en: "A creative Content Creator and SMM professional, skilled in crafting engaging content and managing social media campaigns to boost brand visibility and audience engagement.",
+      ru: "Креативный создатель контента и специалист по SMM, обладающий навыками создания привлекательного контента и управления кампаниями в социальных сетях для повышения узнаваемости бренда и вовлечения аудитории.",
     },
     img: TeamMate6,
   },
