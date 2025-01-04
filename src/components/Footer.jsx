@@ -67,7 +67,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://t.me/your_username" className="flex items-center space-x-2 hover:text-blue-500">
+                <a href="https://t.me/SassScss" className="flex items-center space-x-2 hover:text-blue-500">
                   <FaTelegramPlane size={20} />
                   <span>Telegram</span>
                 </a>
