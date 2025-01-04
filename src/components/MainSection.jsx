@@ -1,4 +1,5 @@
-import React from 'react';
+import { useContext } from "react";
+import { LanguageContext } from "../language-config/LanguageContext";
 import './MainSection.css'; 
 import screen1 from '../assets/screen1.jpeg';
 import screen3 from '../assets/screen3.png';
@@ -6,6 +7,19 @@ import screen4 from '../assets/screen4.png';
 import screen2 from '../assets/screen2.jpeg';
 
 const MainSection = () => {
+  const { language } = useContext(LanguageContext);
+  const translations = {
+    en: {
+      title: "Welcome to Our Website",
+      description: "Explore our innovative solutions and cutting-edge technologies.",
+      projects: "Our projects:",
+    },
+    ru: {
+      title: "Добро пожаловать на наш сайт",
+      description: "Исследуйте наши инновационные решения и передовые технологии.",
+      projects: "Наши проекты:",
+    },
+  };
   return (
     <div className="main-section">
       <div className="wave"></div>
@@ -13,9 +27,9 @@ const MainSection = () => {
       <div className="wave"></div>
 
       <div className="content">
-        <h1>Welcome to Our Website</h1>
-        <p>Explore our innovative solutions and cutting-edge technologies.</p>
-        <p>Our projects:</p>
+        <h1>{translations[language].title}</h1>
+        <p>{translations[language].description}</p>
+        <p>{translations[language].projects}</p>
       </div>
 
       <div className="slider">

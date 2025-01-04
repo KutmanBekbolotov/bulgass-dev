@@ -10,11 +10,46 @@ const Header = ({ scrollToFooter }) => {
   const { language, toggleLanguage } = useContext(LanguageContext);
 
   const services = [
-    { title: "Strategy", items: ["Optimizing for Growth", "Talent Enablement", "Mergers & Acquisitions", "Project to Product", "Generative AI Advisory", "Transformative Research & Insights"] },
-    { title: "Engineering", items: ["Platform & Product Development", "DevOps", "Agile Ways of Working", "Quality Engineering", "IoT", "Open Source", "Metaverse", "API & Integration", "Modernization", "Core & Enterprise Systems", "Composable", "Physical Product Development"] },
-    { title: "Cloud", items: ["Data & Analytics", "Cloud Data Migration", "Artificial Intelligence", "Responsible AI", "Generative AI", "AI Security by Design", "AI-Accelerated Engineering"] },
-    { title: "Cybersecurity", items: ["Managed Detection & Response", "Digital Risk Management", "Outside-In Validation", "Cybersecurity Advisory", "Cloud & Data Security", "Ransomware Protection", "Zero Trust Implementation"] },
+    { 
+      title: { en: "Strategy", ru: "Стратегия" },
+      items: {
+        en: ["Optimizing for Growth", "Talent Enablement", "Mergers & Acquisitions", "Project to Product", "Generative AI Advisory", "Transformative Research & Insights"],
+        ru: ["Оптимизация роста", "Развитие талантов", "Слияния и поглощения", "От проекта к продукту", "Консультации по генеративному ИИ", "Трансформационные исследования и аналитика"]
+      }
+    },
+    {
+      title: { en: "Engineering", ru: "Разработка" },
+      items: {
+        en: ["Platform & Product Development", "DevOps", "Agile Ways of Working", "Quality Engineering", "IoT", "Open Source", "Metaverse", "API & Integration", "Modernization", "Core & Enterprise Systems", "Composable", "Physical Product Development"],
+        ru: ["Разработка платформ и продуктов", "DevOps", "Гибкие методологии", "Контроль качества", "Интернет вещей", "Открытый код", "Метавселенная", "API и интеграции", "Модернизация", "Корпоративные системы", "Композитная архитектура", "Разработка физических продуктов"]
+      }
+    },
+    {
+      title: { en: "Cloud", ru: "Облачные технологии" },
+      items: {
+        en: ["Data & Analytics", "Cloud Data Migration", "Artificial Intelligence", "Responsible AI", "Generative AI", "AI Security by Design", "AI-Accelerated Engineering"],
+        ru: ["Данные и аналитика", "Миграция данных в облако", "Искусственный интеллект", "Ответственный ИИ", "Генеративный ИИ", "Безопасность ИИ", "ИИ-ускоренная разработка"]
+      }
+    },
+    {
+      title: { en: "Cybersecurity", ru: "Кибербезопасность" },
+      items: {
+        en: ["Managed Detection & Response", "Digital Risk Management", "Outside-In Validation", "Cybersecurity Advisory", "Cloud & Data Security", "Ransomware Protection", "Zero Trust Implementation"],
+        ru: ["Управляемое обнаружение и реагирование", "Управление цифровыми рисками", "Внешняя валидация", "Консультации по кибербезопасности", "Облачная безопасность и защита данных", "Защита от программ-вымогателей", "Внедрение Zero Trust"]
+      }
+    }
   ];
+
+  const translations = {
+    en: {
+      services: "Services",
+      contactUs: "Contact us",
+    },
+    ru: {
+      services: "Услуги",
+      contactUs: "Свяжитесь с нами",
+    },
+  };
 
   const closeModal = () => {
     setModalOpen(false);
@@ -34,7 +69,7 @@ const Header = ({ scrollToFooter }) => {
                   onClick={() => setModalOpen(true)} 
                   className="hover:text-blue-500 focus:outline-none"
                 >
-                  Services
+                  {translations[language].services}
                 </button>
               </li>
               <li>
@@ -42,7 +77,7 @@ const Header = ({ scrollToFooter }) => {
                   onClick={scrollToFooter} 
                   className="hover:text-blue-500 focus:outline-none"
                 >
-                  Contact us
+                  {translations[language].contactUs}
                 </button>
               </li>
                <li>
@@ -55,7 +90,6 @@ const Header = ({ scrollToFooter }) => {
         </div>
       </header>
 
-      {/* Модальное окно */}
       {isModalOpen && (
         <div className="modal-backdrop">
           <button 
@@ -65,12 +99,12 @@ const Header = ({ scrollToFooter }) => {
             &times;
           </button>
           <div className="modal-text">
-            <h2>Our Services</h2>
+            <h2>{language === "en" ? "Our Services" : "Наши услуги"}</h2>
             {services.map((service, index) => (
               <div key={index} className="service-category">
-                <h3>{service.title}</h3>
+                <h3>{service.title[language]}</h3>
                 <ul>
-                  {service.items.map((item, idx) => (
+                  {service.items[language].map((item, idx) => (
                     <li key={idx}>{item}</li>
                   ))}
                 </ul>
