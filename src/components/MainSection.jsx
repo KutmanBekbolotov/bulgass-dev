@@ -1,8 +1,9 @@
 import React from 'react';
 import './MainSection.css'; 
-import screen1 from '../assets/screen1.png';
+import screen1 from '../assets/screen1.jpeg';
 import screen3 from '../assets/screen3.png';
 import screen4 from '../assets/screen4.png';
+import screen2 from '../assets/screen2.jpeg';
 
 const MainSection = () => {
   return (
@@ -14,6 +15,7 @@ const MainSection = () => {
       <div className="content">
         <h1>Welcome to Our Website</h1>
         <p>Explore our innovative solutions and cutting-edge technologies.</p>
+        <p>Our projects:</p>
       </div>
 
       <div className="slider">
@@ -25,6 +27,9 @@ const MainSection = () => {
         </div>
         <div className="slide">
           <img src={screen3} alt="Project 3" />
+        </div>
+        <div className="slide">
+          <img src={screen2} alt="Project 4" />
         </div>
       </div>
     </div>
