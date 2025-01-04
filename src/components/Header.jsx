@@ -8,7 +8,7 @@ const Header = ({ scrollToFooter }) => {
   const services = [
     { title: "Strategy", items: ["Optimizing for Growth", "Talent Enablement", "Mergers & Acquisitions", "Project to Product", "Generative AI Advisory", "Transformative Research & Insights"] },
     { title: "Engineering", items: ["Platform & Product Development", "DevOps", "Agile Ways of Working", "Quality Engineering", "IoT", "Open Source", "Metaverse", "API & Integration", "Modernization", "Core & Enterprise Systems", "Composable", "Physical Product Development"] },
-    { title: "Cloud", items: ["Data & Analytics", "Cloud Data Migration", "Artificial Intelligence", "Responsible AI", "Generative AI", "AI Security by Design", "AI-Accelerated Engineering", "EPAM AI/Run™"] },
+    { title: "Cloud", items: ["Data & Analytics", "Cloud Data Migration", "Artificial Intelligence", "Responsible AI", "Generative AI", "AI Security by Design", "AI-Accelerated Engineering"] },
     { title: "Cybersecurity", items: ["Managed Detection & Response", "Digital Risk Management", "Outside-In Validation", "Cybersecurity Advisory", "Cloud & Data Security", "Ransomware Protection", "Zero Trust Implementation"] },
   ];
 
