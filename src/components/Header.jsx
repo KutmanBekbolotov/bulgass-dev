@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import "./Header.css";
 import logo from '../assets/logo.png';
 
-const Header = () => {
+const Header = ({ scrollToFooter }) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const services = [
@@ -10,8 +10,6 @@ const Header = () => {
     { title: "Engineering", items: ["Platform & Product Development", "DevOps", "Agile Ways of Working", "Quality Engineering", "IoT", "Open Source", "Metaverse", "API & Integration", "Modernization", "Core & Enterprise Systems", "Composable", "Physical Product Development"] },
     { title: "Cloud", items: ["Data & Analytics", "Cloud Data Migration", "Artificial Intelligence", "Responsible AI", "Generative AI", "AI Security by Design", "AI-Accelerated Engineering", "EPAM AI/Run™"] },
     { title: "Cybersecurity", items: ["Managed Detection & Response", "Digital Risk Management", "Outside-In Validation", "Cybersecurity Advisory", "Cloud & Data Security", "Ransomware Protection", "Zero Trust Implementation"] },
-    { title: "CX+", items: ["Physical Experience", "CX Strategy & Design", "White Space Innovation", "Next-Gen Marketing", "Workforce Experience", "Digital Transformation"] },
-    { title: "Client Work", items: ["Partners", "Our Brands", "EPAM CONTINUUM", "TEST IO"] }
   ];
 
   const closeModal = () => {
@@ -36,7 +34,12 @@ const Header = () => {
                 </button>
               </li>
               <li>
-                <a href="#contact" className="hover:text-blue-500">Contact us</a>
+                <button 
+                  onClick={scrollToFooter} 
+                  className="hover:text-blue-500 focus:outline-none"
+                >
+                  Contact us
+                </button>
               </li>
             </ul>
           </nav>
