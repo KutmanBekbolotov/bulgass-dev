@@ -3,15 +3,14 @@ import { FaInstagram, FaWhatsapp, FaTelegramPlane } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8 mt-12">
+    <footer className="bg-gray-800 text-white py-8 mt-0">
       <div className="container mx-auto px-4">
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-semibold mb-4">Company</h3>
             <ul>
-              <li><a href="#about" className="hover:text-blue-500">About Us</a></li>
-              <li><a href="#careers" className="hover:text-blue-500">Careers</a></li>
+              <li><a href="/about" className="hover:text-blue-500">About Us</a></li>
               <li><a href="#blog" className="hover:text-blue-500">Blog</a></li>
             </ul>
           </div>
@@ -21,7 +20,6 @@ const Footer = () => {
             <ul>
               <li><a href="#consulting" className="hover:text-blue-500">Consulting</a></li>
               <li><a href="#development" className="hover:text-blue-500">Development</a></li>
-              <li><a href="#support" className="hover:text-blue-500">Support</a></li>
             </ul>
           </div>
 
