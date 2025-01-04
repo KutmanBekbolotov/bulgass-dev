@@ -110,7 +110,9 @@ const AboutUs = () => {
               />
               <h3 className="text-xl font-bold text-gray-800">Raghav Desai</h3>
               <h6 className="text-xl font-bold text-gray-600">Lead Developer</h6>
-              <p className="text-gray-600">A strategic Lead Developer with a strong background in full-stack development, capable of driving technical innovation and overseeing the development lifecycle.</p>
+              <p className="text-gray-600">
+                A strategic Lead Developer with a strong background in full-stack development, capable of driving technical innovation and overseeing the development lifecycle.
+              </p>
             </div>
           </div>
         </section>
