@@ -5,6 +5,7 @@ import TeamMate2 from "../assets/TeamMates/TeamMate2.jpeg";
 import TeamMate3 from "../assets/TeamMates/TeamMate3.jpeg";
 import TeamMate4 from "../assets/TeamMates/TeamMate4.jpeg";
 import TeamMate5 from "../assets/TeamMates/TeamMate5.jpeg";
+import TeamMate6 from "../assets/TeamMates/TeamMate6.png";
 
 const AboutUs = () => {
   return (
@@ -75,7 +76,7 @@ const AboutUs = () => {
                 alt="Team Member 3"
                 className="w-32 h-44 mx-auto rounded-full mb-4"
               />
-              <h3 className="text-xl font-bold text-gray-800">Raghav Desa</h3>
+              <h3 className="text-xl font-bold text-gray-800">Ilyaz Zulpiev</h3>
               <h6 className="text-xl font-bold text-gray-600">Lead Developer</h6>
               <p className="text-gray-600">
                 A strategic Lead Developer with a strong background in full-stack development, capable of driving technical innovation and overseeing the development lifecycle.</p>
@@ -104,11 +105,11 @@ const AboutUs = () => {
             </div>
             <div className="team-member bg-white shadow-lg rounded-lg p-6 text-center transition-transform transform hover:scale-105">
               <img
-                src={TeamMate3}
+                src={TeamMate6}
                 alt="Team Member 3"
                 className="w-32 h-44 mx-auto rounded-full mb-4"
               />
-              <h3 className="text-xl font-bold text-gray-800">Raghav Desai</h3>
+              <h3 className="text-xl font-bold text-gray-800">Nazik Alymseitova</h3>
               <h6 className="text-xl font-bold text-gray-600">Lead Developer</h6>
               <p className="text-gray-600">A strategic Lead Developer with a strong background in full-stack development, capable of driving technical innovation and overseeing the development lifecycle.</p>
             </div>
