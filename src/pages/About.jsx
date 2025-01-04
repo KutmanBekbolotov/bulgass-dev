@@ -110,9 +110,9 @@ const AboutUs = () => {
                 className="w-32 h-44 mx-auto rounded-full mb-4"
               />
               <h3 className="text-xl font-bold text-gray-800">Nazik Alymseitova</h3>
-              <h6 className="text-xl font-bold text-gray-600">Lead Developer</h6>
+              <h6 className="text-xl font-bold text-gray-600">Content maker & SMM</h6>
               <p className="text-gray-600">
-                A strategic Lead Developer with a strong background in full-stack development, capable of driving technical innovation and overseeing the development lifecycle.
+              A creative Content Creator and SMM professional, skilled in crafting engaging content and managing social media campaigns to boost brand visibility and audience engagement.
               </p>
             </div>
           </div>
