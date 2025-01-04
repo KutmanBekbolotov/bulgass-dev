@@ -1,4 +1,4 @@
-import React from 'react';
+import { LanguageProvider } from './language-config/LanguageContext';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import MainSection from './components/MainSection';
@@ -8,6 +8,7 @@ import Blog from './pages/Blog';
 
 const App = () => {
   return (
+    <LanguageProvider>
     <Router>
       <Header />
       <main>
@@ -19,6 +20,8 @@ const App = () => {
       </main>
       <Footer />
     </Router>
+    </LanguageProvider>
+
   );
 };
 

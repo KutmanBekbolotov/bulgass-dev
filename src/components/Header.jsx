@@ -1,9 +1,13 @@
-import React, { useRef, useState } from 'react';
+import {  useState, useContext } from 'react';
 import "./Header.css";
 import logo from '../assets/logo.png';
+import { LanguageContext } from "../language-config/LanguageContext";
+
+
 
 const Header = ({ scrollToFooter }) => {
   const [isModalOpen, setModalOpen] = useState(false);
+  const { language, toggleLanguage } = useContext(LanguageContext);
 
   const services = [
     { title: "Strategy", items: ["Optimizing for Growth", "Talent Enablement", "Mergers & Acquisitions", "Project to Product", "Generative AI Advisory", "Transformative Research & Insights"] },
@@ -41,6 +45,11 @@ const Header = ({ scrollToFooter }) => {
                   Contact us
                 </button>
               </li>
+               <li>
+              <button onClick={toggleLanguage}>
+              {language === "en" ? "RU" : "EN"}
+            </button>
+               </li>
             </ul>
           </nav>
         </div>
