@@ -96,7 +96,7 @@ const AboutUs = () => {
               <img
                 src={TeamMate5}
                 alt="Team Member 3"
-                className="w-32 h-44 mx-auto rounded-full mb-4"
+                className="w-32 h-34 mx-auto rounded-full mb-4"
               />
               <h3 className="text-xl font-bold text-gray-800">Shernazar Alykulov</h3>
               <h6 className="text-xl font-bold text-gray-600">Marketing Lead</h6>
