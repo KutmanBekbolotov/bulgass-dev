@@ -3,7 +3,7 @@ import "./About.css";
 import TeamMate1 from "../assets/TeamMates/TeamMate1.JPG";
 import TeamMate2 from "../assets/TeamMates/TeamMate2.jpeg";
 import TeamMate3 from "../assets/TeamMates/TeamMate3.jpeg";
-import TeamMate4 from "../assets/TeamMates/TeamMate4.jpeg";
+import TeamMate4 from "../assets/TeamMates/TeamMate4.png";
 import TeamMate5 from "../assets/TeamMates/TeamMate5.jpeg";
 
 const AboutUs = () => {
@@ -86,10 +86,10 @@ const AboutUs = () => {
                 alt="Team Member 3"
                 className="w-32 h-38 mx-auto rounded-full mb-4"
               />
-              <h3 className="text-xl font-bold text-gray-800">Oksana Volnova </h3>
-              <h6 className="text-xl font-bold text-gray-600">DevOps engineer</h6>
+              <h3 className="text-xl font-bold text-gray-800">Aiza Abditair</h3>
+              <h6 className="text-xl font-bold text-gray-600">SEO & funder</h6>
               <p className="text-gray-600">
-                An experienced DevOps professional focused on enhancing development cycles, automating infrastructure management, and improving system performance
+              An entrepreneurial SEO expert and founder, combining technical SEO knowledge with business acumen to create high-performing websites and successful digital marketing strategies.
               </p>
             </div>
             <div className="team-member bg-white shadow-lg rounded-lg p-6 text-center transition-transform transform hover:scale-105">
