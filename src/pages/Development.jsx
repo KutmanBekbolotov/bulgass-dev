@@ -127,7 +127,7 @@ BTC Holder Companies: Узнайте о компаниях, которые де�
               <p>{translations[language].description5}</p>
             </div>
             <div className="project-card bg-white shadow-lg rounded-lg p-6">
-              <h3 className="text-2xl font-semibold mb-4">Video Demo</h3>
+              <h3 className="text-2xl font-semibold mb-4">Exploring DNA</h3>
               <video
                 src={DNA}
                 className="w-full h-auto rounded-lg shadow-lg"
