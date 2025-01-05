@@ -5,8 +5,6 @@ import blog1 from "../assets/Blogs/blog1.jpeg";
 import blog2 from "../assets/Blogs/blog2.jpeg";
 import blog3 from "../assets/Blogs/blog3.jpeg";
 
-// ... existing imports ...
-
 const Blog = () => {
   const { language } = useContext(LanguageContext);
 
