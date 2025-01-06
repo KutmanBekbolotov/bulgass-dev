@@ -177,12 +177,12 @@ BTC Holder Companies: Узнайте о компаниях, которые де�
                 loop
                 muted
               />
-              <p className="mt-4">{translations[language].description6}</p>
+              <p className="mt-4">{translations[language].description8}</p>
             </div>
             <div className="project-card bg-white shadow-lg rounded-lg p-6">
-              <h3 className="text-2xl font-semibold mb-4">Generative AI</h3>
+              <h3 className="text-2xl font-semibold mb-4">Korean kitchen</h3>
               <img src={Fukoka} alt="Project 4 - screen 1" className="w-full h-auto rounded-lg" />
-              <p>{translations[language].description4}</p>
+              <p>{translations[language].description9}</p>
             </div>
           </div>
         </div>
