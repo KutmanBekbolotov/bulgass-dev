@@ -1,31 +1,34 @@
+/* Global Styles */
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow: auto;
-    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
 }
 
 @keyframes gradient {
-    0% {
-      background-position: 0% 0%;
-    }
-    50% {
-      background-position: 100% 100%;
-    }
-    100% {
-      background-position: 0% 0%;
-    }
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
+/* Main Section Styles */
 .main-section {
   position: relative;
   height: 100vh;
   overflow: hidden;
 }
 
+/* Wave Background */
 .wave {
   background: rgb(255 255 255 / 25%);
   border-radius: 1000% 1000% 0 0;
@@ -33,8 +36,6 @@ body {
   width: 200%;
   height: 12em;
   animation: wave 10s -3s linear infinite;
-  transform: translate3d(0, 0, 0);
-  opacity: 0.8;
   bottom: 0;
   left: 0;
   z-index: -1;
@@ -43,43 +44,25 @@ body {
 .wave:nth-of-type(2) {
   bottom: -1.25em;
   animation: wave 18s linear reverse infinite;
-  opacity: 0.8;
 }
 
 .wave:nth-of-type(3) {
   bottom: -2.5em;
   animation: wave 20s -1s reverse infinite;
-  opacity: 0.9;
 }
 
 @keyframes wave {
-  2% {
-    transform: translateX(1);
-  }
-
-  25% {
-    transform: translateX(-25%);
-  }
-
-  50% {
-    transform: translateX(-50%);
-  }
-
-  75% {
-    transform: translateX(-25%);
-  }
-
-  100% {
-    transform: translateX(1);
-  }
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
 }
 
+/* Content */
 .content {
-  position: relative;
-  z-index: 1;
-  color: white;
   text-align: center;
+  color: white;
   padding: 100px 20px;
+  z-index: 1;
 }
 
 .content h1 {
@@ -91,34 +74,31 @@ body {
   font-size: 1.5rem;
 }
 
+/* Slider */
 .slider {
   position: relative;
   margin: 20px auto;
-  max-width: 90%; 
+  max-width: 90%;
   height: 300px;
   overflow: hidden;
   border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
 }
 
 .slide {
   position: absolute;
   top: 0;
-  left: 0; 
-  width: 100%; 
-  height: 100%; 
+  left: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 
 .slide img {
-  width: 100%; 
+  width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
-
 
 .slider .slide:nth-child(1) {
   animation: slideShow 15s infinite;
@@ -134,6 +114,14 @@ body {
 
 .slider .slide:nth-child(4) {
   animation: slideShow 15s infinite 9s;
+}
+
+.slider .slide:nth-child(5) {
+  animation: slideShow 15s infinite 15s;
+}
+
+.slider .slide:nth-child(6) {
+  animation: slideShow 15s infinite 20s;
 }
 
 @keyframes slideShow {
@@ -154,41 +142,20 @@ body {
   }
 }
 
-
-@media (max-width: 768px) {
-  .content h1 {
-    font-size: 2rem;
-  }
-
-  .content p {
-    font-size: 0.9rem;
-  }
-
-  .slider {
-    height: 200px; 
-    max-width: 95%; 
-  }
-
-  .wave {
-    height: 10em;
-  }
+/* Swiper Styles */
+.project-card {
+  margin: 20px auto;
+  max-width: 80%;
+  text-align: center;
 }
 
-@media (max-width: 480px) {
-  .content h1 {
-    font-size: 1.8rem;
-  }
+.swiper-container {
+  padding: 20px 0;
+}
 
-  .content p {
-    font-size: 0.8rem;
-  }
-
-  .slider {
-    height: 150px; 
-    max-width: 100%; 
-  }
-
-  .slide img {
-    object-fit: contain; 
-  }
+.swiper-slide-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
